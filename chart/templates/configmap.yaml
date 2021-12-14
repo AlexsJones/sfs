@@ -7,5 +7,5 @@ data:
     files:
 {{ range $v :=  .Values.config }}    
     - filename: {{$v.filename}}
-        url: {{$v.url}}
+      url: {{$v.url}}
 {{ end }}

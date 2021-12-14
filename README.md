@@ -1,10 +1,10 @@
 # sfs ( Stupid File Server )
 
-I want to be able to serve binaries and other things inside a Kubernetes cluster.
+- I want to be able to serve binaries and other things inside a Kubernetes cluster.
 
-I don't want all the ceremony of having to stand up nginx and mess around with it's config.
+- I don't want all the ceremony of having to stand up nginx and mess around with it's config.
 
-I also don't want it to have to rely on any existing data storage ( it should pull the files in).
+- I also don't want it to have to rely on any existing data storage ( it should pull the files in).
 
 
 For example:
@@ -18,11 +18,14 @@ config:
 
 ```
 
-This becomes accessible at via the service in cluster
+
+This becomes accessible at via the service in cluster `http://sfs:8100/k3s`
 
 ## Install
 
-`make helm`
+- Setup the files you want to download in the helm chart.
+
+- `make helm`  or `cd chart && helm install --upgrade sfs .`
 
 
 ### configuration
