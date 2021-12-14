@@ -28,6 +28,6 @@ This becomes accessible at via the service in cluster `http://sfs:8100/k3s`
 - `make helm`  or `cd chart && helm install --upgrade sfs .`
 
 
-### configuration
+### configuration
 
 _See chart/values.yaml_
