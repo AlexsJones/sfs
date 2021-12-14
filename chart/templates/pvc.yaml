@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sfs-data
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.storageClassSize }}
+  storageClassName: {{ .Values.storageClassName }}
+status:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: {{ .Values.storageClassSize }}

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sfs-config
+data:
+  config.yaml: |
+    files:
+{{ range $v :=  .Values.config }}    
+    - filename: {{$v.filename}}
+        url: {{$v.url}}
+{{ end }}

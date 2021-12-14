@@ -1,0 +1,3 @@
+files:
+  - filename: k3s
+    url: https://github.com/k3s-io/k3s/releases/download/v1.22.3+k3s1/k3s
