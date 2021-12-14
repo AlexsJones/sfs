@@ -1,5 +1,7 @@
 # sfs ( Stupid File Server )
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/71c0d1494f6a446d4d4c/maintainability)](https://codeclimate.com/github/AlexsJones/sfs/maintainability)
+
 - I want to be able to serve binaries and other things inside a Kubernetes cluster.
 
 - I don't want all the ceremony of having to stand up nginx and mess around with it's config.
