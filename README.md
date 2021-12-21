@@ -23,6 +23,11 @@ config:
 
 This becomes accessible at via the service in cluster `http://sfs:8100/k3s`
 
+Or using the Ingress example ... `https://sfs.cloudnativeskunkworks.io/flower.svg`
+
+![sfs](images/fileserver.png)
+
+
 ## Install
 
 - Setup the files you want to download in the helm chart.
