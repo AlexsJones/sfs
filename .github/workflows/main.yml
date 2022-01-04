@@ -24,7 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+      - name: Check dir
+        run: ls
       - name: Test our Datree helm action
         id: entry
         uses: AlexsJones/action-helm-datree@main # Uses an action in the root directory
