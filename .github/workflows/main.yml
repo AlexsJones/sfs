@@ -31,5 +31,6 @@ jobs:
         with:
           # This is an example token, it is not active
           datree_token: "2CHvnSLvs2AthcuyZYVAMH"
+          chart_directory: "chart"
       - name: Get result
         run: echo "${{ steps.entry.outputs.result }}"
